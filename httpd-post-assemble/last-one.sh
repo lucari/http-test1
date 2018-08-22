@@ -4,6 +4,11 @@ echo "last-one.sh has been run under httpd-post-assemble"
 
 INDEXFILE=$HOME/index.html
 
+if [ "$FANCYNAME" = "" ]
+then
+    $FANCYNAME="FANCYNAME"
+fi
+
 echo "<HTML>" >$INDEXFILE
 echo "<HEAD><TITLE>$FANCYNAME Test Page</TITLE></HEAD>" >$INDEXFILE
 echo "<BODY>" >$INDEXFILE
