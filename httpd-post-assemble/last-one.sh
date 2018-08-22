@@ -6,7 +6,7 @@ INDEXFILE=$HOME/index.html
 
 if [ "$FANCYNAME" = "" ]
 then
-    $FANCYNAME="FANCYNAME"
+    FANCYNAME="set FANCYNAME variable"
 fi
 
 echo "<HTML>" >$INDEXFILE
