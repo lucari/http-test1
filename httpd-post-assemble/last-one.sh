@@ -6,8 +6,11 @@ INDEXFILE=$HOME/index.html
 
 if [ "$FANCYNAME" = "" ]
 then
+    echo "FANCYNAME not set. Setting reminder"
     FANCYNAME="set FANCYNAME variable"
 fi
+
+echo "FANCYNAME is set to $FANCYNAME"
 
 echo "<HTML>" >$INDEXFILE
 echo "<HEAD><TITLE>$FANCYNAME Test Page</TITLE></HEAD>" >>$INDEXFILE
